@@ -1,1124 +1,248 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <title>Fanjoyo &mdash; Website</title>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home X</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/img/favicon.ico'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/owl.carousel.min.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/ticker-style.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/flaticon.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/slicknav.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/animate.min.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/magnific-popup.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/fontawesome-all.min.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/themify-icons.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/slick.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/nice-select.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('theme/fonts/icomoon/style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/animate.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/owl.carousel.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/owl.theme.default.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/bootstrap-datepicker.css'); ?>">
+
+    <link rel="stylesheet" href="<?= base_url('theme/fonts/flaticon/font/flaticon.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/aos.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/jquery.fancybox.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/css/style.css'); ?>">
+
 </head>
 
-<body>
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-        <div class="header-area">
-            <div class="main-header ">
-                <div class="header-top black-bg d-none d-sm-block">
-                    <div class="container">
-                        <div class="col-xl-12">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="header-info-left">
-                                    <ul>
-                                        <li class="title"><span class="flaticon-energy"></span> trending-title</li>
-                                        <li>Class property employ ancho red multi level mansion</li>
-                                    </ul>
-                                </div>
-                                <div class="header-info-right">
-                                    <ul class="header-date">
-                                        <li><span class="flaticon-calendar"></span> +880166 253 232</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-mid gray-bg">
-                    <div class="container">
-                        <div class="row d-flex align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-3 col-lg-3 col-md-3 d-none d-md-block">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9">
-                                <div class="header-banner f-right ">
-                                    <img src="assets/img/gallery/header_card.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-bottom header-sticky">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-8 col-lg-8 col-md-12 header-flex">
-                                <!-- sticky -->
-                                <div class="sticky-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                                <!-- Main-menu -->
-                                <div class="main-menu d-none d-md-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="<?= base_url(''); ?>">Home</a></li>
-                                            <li><a href="<?= base_url('about'); ?>">about</a></li>
-                                            <li><a href="<?= base_url('category'); ?>">Category</a></li>
-                                            <li><a href="<?= base_url('news'); ?>">Latest News</a></li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="<?= base_url('blog'); ?>">Blog</a></li>
-                                                    <li><a href="<?= base_url('blog'); ?>">Blog Details</a></li>
-                                                    <li><a href="<?= base_url('element'); ?>">Element</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="<?= base_url('contact'); ?>">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                                <div class="header-right f-right d-none d-lg-block">
-                                    <!-- Heder social -->
-                                    <ul class="header-social">
-                                        <li><a href="https://www.fb.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    </ul>
-                                    <!-- Search Nav -->
-                                    <div class="nav-search search-switch">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-md-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-    </header>
-    <main>
-        <!-- Trending Area Start -->
-        <div class="trending-area fix pt-25 gray-bg">
-            <div class="container">
-                <div class="trending-main">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <!-- Trending Top -->
-                            <div class="slider-active">
-                                <!-- Single -->
-                                <div class="single-slider">
-                                    <div class="trending-top mb-30">
-                                        <div class="trend-top-img">
-                                            <img src="assets/img/trending/trending_top2.jpg" alt="">
-                                            <div class="trend-top-cap">
-                                                <span class="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Business</span>
-                                                <h2><a href="latest_news.html" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Anna Lora Stuns In White At Her Australian Premiere</a></h2>
-                                                <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by Alice cloe - Jun 19, 2020</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single -->
-                                <div class="single-slider">
-                                    <div class="trending-top mb-30">
-                                        <div class="trend-top-img">
-                                            <img src="assets/img/trending/trending_top02.jpg" alt="">
-                                            <div class="trend-top-cap">
-                                                <span class="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Business</span>
-                                                <h2><a href="latest_news.html" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Anna Lora Stuns In White At Her Australian Premiere</a></h2>
-                                                <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by Alice cloe - Jun 19, 2020</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single -->
-                                <div class="single-slider">
-                                    <div class="trending-top mb-30">
-                                        <div class="trend-top-img">
-                                            <img src="assets/img/trending/trending_top03.jpg" alt="">
-                                            <div class="trend-top-cap">
-                                                <span class="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Business</span>
-                                                <h2><a href="latest_news.html" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Anna Lora Stuns In White At Her Australian Premiere</a></h2>
-                                                <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by Alice cloe - Jun 19, 2020</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Right content -->
-                        <div class="col-lg-4">
-                            <!-- Trending Top -->
-                            <div class="row">
-                                <div class="col-lg-12 col-md-6 col-sm-6">
-                                    <div class="trending-top mb-30">
-                                        <div class="trend-top-img">
-                                            <img src="assets/img/trending/trending_top3.jpg" alt="">
-                                            <div class="trend-top-cap trend-top-cap2">
-                                                <span class="bgb">FASHION</span>
-                                                <h2><a href="latest_news.html">Secretart for Economic Air
-                                                        plane that looks like</a></h2>
-                                                <p>by Alice cloe - Jun 19, 2020</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-6 col-sm-6">
-                                    <div class="trending-top mb-30">
-                                        <div class="trend-top-img">
-                                            <img src="assets/img/trending/trending_top4.jpg" alt="">
-                                            <div class="trend-top-cap trend-top-cap2">
-                                                <span class="bgg">TECH </span>
-                                                <h2><a href="latest_news.html">Secretart for Economic Air plane that looks like</a></h2>
-                                                <p>by Alice cloe - Jun 19, 2020</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Trending Area End -->
-        <!-- Whats New Start -->
-        <section class="whats-news-area pt-50 pb-20 gray-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="whats-news-wrapper">
-                            <!-- Heading & Nav Button -->
-                            <div class="row justify-content-between align-items-end mb-15">
-                                <div class="col-xl-4">
-                                    <div class="section-tittle mb-30">
-                                        <h3>Whats New</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-8 col-md-9">
-                                    <div class="properties__button">
-                                        <!--Nav Button  -->
-                                        <nav>
-                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Lifestyle</a>
-                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Travel</a>
-                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Fashion</a>
-                                                <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Sports</a>
-                                                <a class="nav-item nav-link" id="nav-Sports" data-toggle="tab" href="#nav-nav-Sport" role="tab" aria-controls="nav-contact" aria-selected="false">Technology</a>
-                                            </div>
-                                        </nav>
-                                        <!--End Nav Button  -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Tab content -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <!-- Nav Card -->
-                                    <div class="tab-content" id="nav-tabContent">
-                                        <!-- card one -->
-                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                            <div class="row">
-                                                <!-- Left Details Caption -->
-                                                <div class="col-xl-6 col-lg-12">
-                                                    <div class="whats-news-single mb-40 mb-40">
-                                                        <div class="whates-img">
-                                                            <img src="assets/img/gallery/whats_news_details1.png" alt="">
-                                                        </div>
-                                                        <div class="whates-caption">
-                                                            <h4><a href="latest_news.html">Secretart for Economic Air plane that looks like</a></h4>
-                                                            <span>by Alice cloe - Jun 19, 2020</span>
-                                                            <p>Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Right single caption -->
-                                                <div class="col-xl-6 col-lg-12">
-                                                    <div class="row">
-                                                        <!-- single -->
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img1.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img2.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img3.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorg">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img4.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorr">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card two -->
-                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                            <div class="row">
-                                                <!-- Left Details Caption -->
-                                                <div class="col-xl-6">
-                                                    <div class="whats-news-single mb-40">
-                                                        <div class="whates-img">
-                                                            <img src="assets/img/gallery/whats_right_img2.png" alt="">
-                                                        </div>
-                                                        <div class="whates-caption">
-                                                            <h4><a href="#">Secretart for Economic Air
-                                                                    plane that looks like</a></h4>
-                                                            <span>by Alice cloe - Jun 19, 2020</span>
-                                                            <p>Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Right single caption -->
-                                                <div class="col-xl-6 col-lg-12">
-                                                    <div class="row">
-                                                        <!-- single -->
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img1.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img2.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img3.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorg">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img4.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorr">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card three -->
-                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                            <div class="row">
-                                                <!-- Left Details Caption -->
-                                                <div class="col-xl-6">
-                                                    <div class="whats-news-single mb-40">
-                                                        <div class="whates-img">
-                                                            <img src="assets/img/gallery/whats_right_img4.png" alt="">
-                                                        </div>
-                                                        <div class="whates-caption">
-                                                            <h4><a href="#">Secretart for Economic Air
-                                                                    plane that looks like</a></h4>
-                                                            <span>by Alice cloe - Jun 19, 2020</span>
-                                                            <p>Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Right single caption -->
-                                                <div class="col-xl-6 col-lg-12">
-                                                    <div class="row">
-                                                        <!-- single -->
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img1.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img2.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img3.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorg">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img4.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorr">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- card fure -->
-                                        <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
-                                            <div class="row">
-                                                <!-- Left Details Caption -->
-                                                <div class="col-xl-6">
-                                                    <div class="whats-news-single mb-40">
-                                                        <div class="whates-img">
-                                                            <img src="assets/img/gallery/whats_right_img2.png" alt="">
-                                                        </div>
-                                                        <div class="whates-caption">
-                                                            <h4><a href="#">Secretart for Economic Air
-                                                                    plane that looks like</a></h4>
-                                                            <span>by Alice cloe - Jun 19, 2020</span>
-                                                            <p>Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Right single caption -->
-                                                <div class="col-xl-6 col-lg-12">
-                                                    <div class="row">
-                                                        <!-- single -->
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img1.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img2.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img3.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorg">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img4.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorr">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- card Five -->
-                                        <div class="tab-pane fade" id="nav-nav-Sport" role="tabpanel" aria-labelledby="nav-Sports">
-                                            <div class="row">
-                                                <!-- Left Details Caption -->
-                                                <div class="col-xl-6">
-                                                    <div class="whats-news-single mb-40">
-                                                        <div class="whates-img">
-                                                            <img src="assets/img/gallery/whats_news_details1.png" alt="">
-                                                        </div>
-                                                        <div class="whates-caption">
-                                                            <h4><a href="#">Secretart for Economic Air
-                                                                    plane that looks like</a></h4>
-                                                            <span>by Alice cloe - Jun 19, 2020</span>
-                                                            <p>Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Right single caption -->
-                                                <div class="col-xl-6 col-lg-12">
-                                                    <div class="row">
-                                                        <!-- single -->
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img1.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img2.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorb">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img3.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorg">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
-                                                            <div class="whats-right-single mb-20">
-                                                                <div class="whats-right-img">
-                                                                    <img src="assets/img/gallery/whats_right_img4.png" alt="">
-                                                                </div>
-                                                                <div class="whats-right-cap">
-                                                                    <span class="colorr">FASHION</span>
-                                                                    <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
-                                                                    <p>Jun 19, 2020</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Nav Card -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Banner -->
-                        <div class="banner-one mt-20 mb-30">
-                            <img src="assets/img/gallery/body_card1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <!-- Flow Socail -->
-                        <div class="single-follow mb-45">
-                            <div class="single-box">
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-fb.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-tw.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-ins.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-yo.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Most Recent Area -->
-                        <div class="most-recent-area">
-                            <!-- Section Tittle -->
-                            <div class="small-tittle mb-20">
-                                <h4>Most Recent</h4>
-                            </div>
-                            <!-- Details -->
-                            <div class="most-recent mb-40">
-                                <div class="most-recent-img">
-                                    <img src="assets/img/gallery/most_recent.png" alt="">
-                                    <div class="most-recent-cap">
-                                        <span class="bgbeg">Vogue</span>
-                                        <h4><a href="latest_news.html">What to Wear: 9+ Cute Work <br>
-                                                Outfits to Wear This.</a></h4>
-                                        <p>Jhon | 2 hours ago</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single -->
-                            <div class="most-recent-single">
-                                <div class="most-recent-images">
-                                    <img src="assets/img/gallery/most_recent1.png" alt="">
-                                </div>
-                                <div class="most-recent-capt">
-                                    <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                    <p>Jhon | 2 hours ago</p>
-                                </div>
-                            </div>
-                            <!-- Single -->
-                            <div class="most-recent-single">
-                                <div class="most-recent-images">
-                                    <img src="assets/img/gallery/most_recent2.png" alt="">
-                                </div>
-                                <div class="most-recent-capt">
-                                    <h4><a href="latest_news.html">Most Beautiful Things to Do in Sidney with Your BF</a></h4>
-                                    <p>Jhon | 3 hours ago</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Whats New End -->
-        <!--   Weekly2-News start -->
-        <div class="weekly2-news-area pt-50 pb-30 gray-bg">
-            <div class="container">
-                <div class="weekly2-wrapper">
-                    <div class="row">
-                        <!-- Banner -->
-                        <div class="col-lg-3">
-                            <div class="home-banner2 d-none d-lg-block">
-                                <img src="assets/img/gallery/body_card2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="slider-wrapper">
-                                <!-- section Tittle -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="small-tittle mb-30">
-                                            <h4>Most Popular</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slider -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="weekly2-news-active d-flex">
-                                            <!-- Single -->
-                                            <div class="weekly2-single">
-                                                <div class="weekly2-img">
-                                                    <img src="assets/img/gallery/weeklyNews1.png" alt="">
-                                                </div>
-                                                <div class="weekly2-caption">
-                                                    <h4><a href="#">Scarlett’s disappointment at latest accolade</a></h4>
-                                                    <p>Jhon | 2 hours ago</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single -->
-                                            <div class="weekly2-single">
-                                                <div class="weekly2-img">
-                                                    <img src="assets/img/gallery/weeklyNews2.png" alt="">
-                                                </div>
-                                                <div class="weekly2-caption">
-                                                    <h4><a href="#">Scarlett’s disappointment at latest accolade</a></h4>
-                                                    <p>Jhon | 2 hours ago</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single -->
-                                            <div class="weekly2-single">
-                                                <div class="weekly2-img">
-                                                    <img src="assets/img/gallery/weeklyNews3.png" alt="">
-                                                </div>
-                                                <div class="weekly2-caption">
-                                                    <h4><a href="#">Scarlett’s disappointment at latest accolade</a></h4>
-                                                    <p>Jhon | 2 hours ago</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single -->
-                                            <div class="weekly2-single">
-                                                <div class="weekly2-img">
-                                                    <img src="assets/img/gallery/weeklyNews2.png" alt="">
-                                                </div>
-                                                <div class="weekly2-caption">
-                                                    <h4><a href="#">Scarlett’s disappointment at latest accolade</a></h4>
-                                                    <p>Jhon | 2 hours ago</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Weekly-News -->
-        <!--  Recent Articles start -->
-        <div class="recent-articles pt-80 pb-80">
-            <div class="container">
-                <div class="recent-wrapper">
-                    <!-- section Tittle -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-tittle mb-30">
-                                <h3>Trending News</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="recent-active dot-style d-flex dot-style">
-                                <!-- Single -->
-                                <div class="single-recent">
-                                    <div class="what-img">
-                                        <img src="assets/img/gallery/tranding1.png" alt="">
-                                    </div>
-                                    <div class="what-cap">
-                                        <h4><a href="#">
-                                                <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                            </a></h4>
-                                        <P>Jun 19, 2020</P>
-                                        <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><span class="flaticon-play-button"></span></a>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-                                    </div>
+
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div> <!-- .site-mobile-menu -->
+
+
+        <div class="site-navbar-wrap">
+
+            <div class="site-navbar site-navbar-target js-sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-4">
+                            <h1 class="my-0 site-logo"><a href="index.html">Fanjoyo<span class="text-primary">.</span> </a></h1>
+                        </div>
+                        <div class="col-6 col-md-8">
+                            <nav class="site-navigation text-right" role="navigation">
+                                <div class="container">
+
+                                    <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                                            <span class="icon-menu h3"></span> <span class="menu-text">Menu</span>
+                                        </a></div>
+
+                                    <ul class="site-menu main-menu js-clone-nav d-none d-lg-none">
+                                        <li><a href="#home-section" class="nav-link">Home</a></li>
+                                        <li><a href="#what-we-do-section" class="nav-link">What We Do</a></li>
+                                        <li><a href="#about-section" class="nav-link">About Us</a></li>
+                                        <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                                        <li><a href="#studio-section" class="nav-link">Gallery</a></li>
+                                        <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                                    </ul>
                                 </div>
-                                <!-- Single -->
-                                <div class="single-recent">
-                                    <div class="what-img">
-                                        <img src="assets/img/gallery/tranding2.png" alt="">
-                                    </div>
-                                    <div class="what-cap">
-                                        <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                        <P>Jun 19, 2020</P>
-                                        <a class="popup-video" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><span class="flaticon-play-button"></span></a>
-                                    </div>
-                                </div>
-                                <!-- Single -->
-                                <div class="single-recent">
-                                    <div class="what-img">
-                                        <img src="assets/img/gallery/tranding1.png" alt="">
-                                    </div>
-                                    <div class="what-cap">
-                                        <h4><a href="latest_news.html">
-                                                <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                            </a></h4>
-                                        <P>Jun 19, 2020</P>
-                                        <a class="popup-video" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><span class="flaticon-play-button"></span></a>
-                                    </div>
-                                </div>
-                                <!-- Single -->
-                                <div class="single-recent">
-                                    <div class="what-img">
-                                        <img src="assets/img/gallery/tranding2.png" alt="">
-                                    </div>
-                                    <div class="what-cap">
-                                        <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                        <P>Jun 19, 2020</P>
-                                        <a class="popup-video" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><span class="flaticon-play-button"></span></a>
-                                    </div>
-                                </div>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--Recent Articles End -->
-        <!-- Start Video Area -->
-        <div class="youtube-area video-padding d-none d-sm-block">
+        </div> <!-- END .site-navbar-wrap -->
+
+        <div class="site-blocks-cover" id="home-section">
+            <div class="img-wrap">
+                <div class="owl-carousel slide-one-item hero-slider">
+                    <div class="slide">
+                        <img src="<?= base_url('theme/images/glint_hero_1.jpg'); ?>" alt="Image">
+                    </div>
+                    <div class="slide">
+                        <img src="<?= base_url('theme/images/glint_hero_2.jpg'); ?>" alt="Image">
+                    </div>
+                    <div class="slide">
+                        <img src="<?= base_url('theme/images/glint_hero_3.jpg'); ?>" alt="Image">
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="video-items-active">
-                            <div class="video-items text-center">
-                                <video controls>
-                                    <source src="assets/video/news2.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                    <div class="col-md-6 ml-auto align-self-center">
+                        <div class="intro">
+                            <div class="heading">
+                                <h1>Fanjoyo Group</h1>
                             </div>
-                            <div class="video-items text-center">
-                                <video controls>
-                                    <source src="assets/video/news1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="video-items text-center">
-                                <video controls>
-                                    <source src="assets/video/news3.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="video-items text-center">
-                                <video controls>
-                                    <source src="assets/video/news1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="video-items text-center">
-                                <video controls>
-                                    <source src="assets/video/news3.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-info">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="testmonial-nav text-center">
-                                <div class="single-video">
-                                    <video controls>
-                                        <source src="assets/video/news2.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="video-intro">
-                                        <h4>Old Spondon News - 2020 </h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <video controls>
-                                        <source src="assets/video/news1.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="video-intro">
-                                        <h4>Banglades News Video </h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <video controls>
-                                        <source src="assets/video/news3.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="video-intro">
-                                        <h4>Latest Video - 2020 </h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <video controls>
-                                        <source src="assets/video/news1.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="video-intro">
-                                        <h4>Spondon News -2019 </h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <video controls>
-                                        <source src="assets/video/news3.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="video-intro">
-                                        <h4>Latest Video - 2020</h4>
-                                    </div>
-                                </div>
+                            <div class="text">
+                                <p class="sub-text mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde modi blanditiis iure.</p>
+                                <p><a href="#" target="_blank" class="btn btn-outline-primary btn-md">Start a project</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Start Video area-->
-        <!--   Weekly3-News start -->
-        <div class="weekly3-news-area pt-80 pb-130">
+        </div> <!-- END .site-blocks-cover -->
+
+        <div class="site-section" id="what-we-do-section">
             <div class="container">
-                <div class="weekly3-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="slider-wrapper">
-                                <!-- Slider -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="weekly3-news-active dot-style d-flex">
-                                            <div class="weekly3-single">
-                                                <div class="weekly3-img">
-                                                    <img src="assets/img/gallery/weekly2News1.png" alt="">
-                                                </div>
-                                                <div class="weekly3-caption">
-                                                    <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                                    <p>19 Jan 2020</p>
-                                                </div>
-                                            </div>
-                                            <div class="weekly3-single">
-                                                <div class="weekly3-img">
-                                                    <img src="assets/img/gallery/weekly2News2.png" alt="">
-                                                </div>
-                                                <div class="weekly3-caption">
-                                                    <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                                    <p>19 Jan 2020</p>
-                                                </div>
-                                            </div>
-                                            <div class="weekly3-single">
-                                                <div class="weekly3-img">
-                                                    <img src="assets/img/gallery/weekly2News3.png" alt="">
-                                                </div>
-                                                <div class="weekly3-caption">
-                                                    <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                                    <p>19 Jan 2020</p>
-                                                </div>
-                                            </div>
-                                            <div class="weekly3-single">
-                                                <div class="weekly3-img">
-                                                    <img src="assets/img/gallery/weekly2News4.png" alt="">
-                                                </div>
-                                                <div class="weekly3-caption">
-                                                    <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                                    <p>19 Jan 2020</p>
-                                                </div>
-                                            </div>
-                                            <div class="weekly3-single">
-                                                <div class="weekly3-img">
-                                                    <img src="assets/img/gallery/weekly2News2.png" alt="">
-                                                </div>
-                                                <div class="weekly3-caption">
-                                                    <h4><a href="latest_news.html">What to Expect From the 2020 Oscar Nomin ations</a></h4>
-                                                    <p>19 Jan 2020</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="row mb-5">
+                    <div class="col-lg-6 section-title">
+                        <span class="sub-title mb-2 d-block">What We Do</span>
+                        <h2 class="title text-primary">Far far away, behind the word mountains far from the countries</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 ml-auto">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3>Design</h3>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <p><a href="#" class="readmore">Learn more</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3>Development</h3>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <p><a href="#" class="readmore">Learn more</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3>eCommerce</h3>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <p><a href="#" class="readmore">Learn more</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3>Mobile Apps</h3>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <p><a href="#" class="readmore">Learn more</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3>CopyWriting</h3>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <p><a href="#" class="readmore">Learn more</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3>Search Engine Optimization</h3>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <p><a href="#" class="readmore">Learn more</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Weekly-News -->
-        <!-- banner-last Start -->
-        <div class="banner-area gray-bg pt-90 pb-90">
+        </div> <!-- END .site-section -->
+
+        <div class="site-section" id="about-section">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 col-md-10">
-                        <div class="banner-one">
-                            <img src="assets/img/gallery/body_card3.png" alt="">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5">
+                        <img src="<?= base_url('theme/images/glint_about_1.jpg'); ?>" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5 ml-auto section-title">
+                        <span class="sub-title mb-2 d-block">Acquaint Us</span>
+                        <h2 class="title text-primary mb-3">About us</h2>
+                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+
+                        <div class="d-flex">
+                            <ul class="list-unstyled ul-check success mr-5">
+                                <li>Design</li>
+                                <li>Development</li>
+                                <li>eCommerce</li>
+
+                            </ul>
+                            <ul class="list-unstyled ul-check success">
+
+                                <li>Mobile Apps</li>
+                                <li>Copywriting</li>
+                                <li>SEO</li>
+                            </ul>
                         </div>
+                        <p><a data-fancybox data-ratio="2" href="https://vimeo.com/326176805" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- banner-last End -->
-    </main>
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-main footer-bg">
-            <div class="footer-area footer-padding">
-                <div class="container">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="single-footer-caption mb-30">
-                                    <!-- logo -->
-                                    <div class="footer-logo">
-                                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                    </div>
-                                    <div class="footer-tittle">
-                                        <div class="footer-pera">
-                                            <p class="info1">Lorem ipsum dolor sit amet, nsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                            <p class="info2">198 West 21th Street, Suite 721 New York,NY 10010</p>
-                                            <p class="info2">Phone: +95 (0) 123 456 789 Cell: +95 (0) 123 456 789</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Popular post</h4>
-                                </div>
-                                <!-- Popular post -->
-                                <div class="whats-right-single mb-20">
-                                    <div class="whats-right-img">
-                                        <img src="assets/img/gallery/footer_post1.png" alt="">
-                                    </div>
-                                    <div class="whats-right-cap">
-                                        <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                        <p>Jhon | 2 hours ago</p>
-                                    </div>
-                                </div>
-                                <!-- Popular post -->
-                                <div class="whats-right-single mb-20">
-                                    <div class="whats-right-img">
-                                        <img src="assets/img/gallery/footer_post2.png" alt="">
-                                    </div>
-                                    <div class="whats-right-cap">
-                                        <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                        <p>Jhon | 2 hours ago</p>
-                                    </div>
-                                </div>
-                                <!-- Popular post -->
-                                <div class="whats-right-single mb-20">
-                                    <div class="whats-right-img">
-                                        <img src="assets/img/gallery/footer_post3.png" alt="">
-                                    </div>
-                                    <div class="whats-right-cap">
-                                        <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                        <p>Jhon | 2 hours ago</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
-                            <div class="single-footer-caption mb-50">
-                                <div class="banner">
-                                    <img src="assets/img/gallery/body_card4.png" alt="">
+        </div> <!-- .END site-section -->
+
+
+        <div class="site-section" id="what-we-do-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-6 section-title">
+                        <span class="sub-title mb-2 d-block">Meet The Team</span>
+                        <h2 class="title text-primary">We are talented people.</h2>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 mb-5 person">
+                        <img src="<?= base_url('theme/images/person_1.jpg'); ?>" alt="Image" class="img-fluid mb-5">
+
+                        <div class="row">
+                            <div class="col-lg-10 ml-auto">
+                                <div class="pr-lg-5">
+                                    <h3>Jacob Spencer</h3>
+                                    <span class="mb-4 d-block">CEO, Co-Founder</span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                    <p class="d-flex align-items-center">
+                                        <span class="mr-3 text-black">Follow me:</span>
+                                        <a href="#" class="twitter pr-2 pt-2 pb-2 pl-0"><span class="icon-twitter"></span></a>
+                                        <a href="#" class="facebook p-2"><span class="icon-facebook"></span></a>
+                                        <a href="#" class="dribbble p-2"><span class="icon-dribbble"></span></a>
+                                        <a href="#" class="instagram p-2"><span class="icon-instagram"></span></a>
+                                        <a href="#" class="linkedin p-2"><span class="icon-linkedin"></span></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- footer-bottom area -->
-            <div class="footer-bottom-area footer-bg">
-                <div class="container">
-                    <div class="footer-border">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-xl-12 ">
-                                <div class="footer-copy-right text-center">
-                                    <p>
-                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                        &copy;<script>
-                                            document.write(new Date().getFullYear());
-                                        </script> NU Jombang Online | Build with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://jowokode.com" target="_blank">JowoKode</a>
-                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div class="col-lg-6 person">
+                        <img src="<?= base_url('theme/images/person_2.jpg'); ?>" alt="Image" class="img-fluid mb-5">
+                        <div class="row">
+                            <div class="col-lg-10 ml-auto">
+                                <div class="pr-lg-5">
+                                    <h3>Chris Peters</h3>
+                                    <span class="mb-4 d-block">CTO, Co-Founder</span>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    <p class="d-flex align-items-center">
+                                        <span class="mr-3 text-black">Follow me:</span>
+                                        <a href="#" class="twitter pr-2 pt-2 pb-2 pl-0"><span class="icon-twitter"></span></a>
+                                        <a href="#" class="github p-2"><span class="icon-github"></span></a>
+                                        <a href="#" class="dribbble p-2"><span class="icon-dribbble"></span></a>
+                                        <a href="#" class="instagram p-2"><span class="icon-instagram"></span></a>
+                                        <a href="#" class="linkedin p-2"><span class="icon-linkedin"></span></a>
                                     </p>
                                 </div>
                             </div>
@@ -1127,54 +251,398 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </div>
             </div>
         </div>
-        <!-- Footer End-->
-    </footer>
-    <!-- Search model Begin -->
-    <div class="search-model-box">
-        <div class="d-flex align-items-center h-100 justify-content-center">
-            <div class="search-close-btn">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Searching key.....">
-            </form>
+
+
+        <div class="site-section" id="portfolio-section">
+            <div class="container">
+                <div class="row mb-5 ">
+                    <div class="col-md-7 section-title text-center mx-auto">
+                        <span class="sub-title mb-2 d-block">Recent Works</span>
+                        <h2 class="title text-primary mb-3">We love what we do, check out some of our latest works</h2>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="<?= base_url('theme/images/sq_img_2.jpg'); ?>" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+                        <h3>Project title one</h3>
+                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p class="mb-4"><a href="#" class="readmore">Visit website</a></p>
+                        <div class="testimonial bg-white h-100">
+                            <blockquote class="mb-3">
+                                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center vcard">
+                                <figure class="mb-0 mr-3">
+                                    <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                </figure>
+                                <div class="vcard-text">
+                                    <span class="d-block">Jacob Spencer</span>
+                                    <span class="position">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+                        <img src="<?= base_url('theme/images/sq_img_4.jpg'); ?>" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+                        <h3>Project title two</h3>
+                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p class="mb-4"><a href="#" class="readmore">Visit website</a></p>
+                        <div class="testimonial bg-white h-100">
+                            <blockquote class="mb-3">
+                                <p>&ldquo;A small river named Duden <strong>flows by their place and supplies it with the necessary regelialia</strong>. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center vcard">
+                                <figure class="mb-0 mr-3">
+                                    <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                </figure>
+                                <div class="vcard-text">
+                                    <span class="d-block">Jean Smith</span>
+                                    <span class="position">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="<?= base_url('theme/'); ?>images/sq_img_6.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+                        <h3>Project title three</h3>
+                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p class="mb-4><a href=" #" class="readmore">Visit website</a></p>
+                        <div class="testimonial bg-white h-100">
+                            <blockquote class="mb-3">
+                                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center vcard">
+                                <figure class="mb-0 mr-3">
+                                    <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                </figure>
+                                <div class="vcard-text">
+                                    <span class="d-block">Jacob Spencer</span>
+                                    <span class="position">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+        <div class="site-section bg-light">
+            <div class="container">
+                <div class="row mb-5 ">
+                    <div class="col-md-7 section-title text-center mx-auto">
+                        <span class="sub-title mb-2 d-block">Testimonials</span>
+                        <h2 class="title text-primary mb-3">Our Client Sayings</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="testimonial bg-white h-100">
+                            <blockquote class="mb-3">
+                                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center vcard">
+                                <figure class="mb-0 mr-3">
+                                    <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                </figure>
+                                <div class="vcard-text">
+                                    <span class="d-block">Jacob Spencer</span>
+                                    <span class="position">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="testimonial bg-white h-100">
+                            <blockquote class="mb-3">
+                                <p>&ldquo;A small river named Duden <strong>flows by their place and supplies it with the necessary regelialia</strong>. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center vcard">
+                                <figure class="mb-0 mr-3">
+                                    <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                </figure>
+                                <div class="vcard-text">
+                                    <span class="d-block">Jean Smith</span>
+                                    <span class="position">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="testimonial bg-white h-100">
+                            <blockquote class="mb-3">
+                                <p>&ldquo;A small river named Duden <strong>flows by their place and supplies it with the necessary regelialia</strong>. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center vcard">
+                                <figure class="mb-0 mr-3">
+                                    <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                </figure>
+                                <div class="vcard-text">
+                                    <span class="d-block">Jean Smith</span>
+                                    <span class="position">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="testimonial bg-white h-100">
+                            <blockquote class="mb-3">
+                                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center vcard">
+                                <figure class="mb-0 mr-3">
+                                    <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                </figure>
+                                <div class="vcard-text">
+                                    <span class="d-block">Jacob Spencer</span>
+                                    <span class="position">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="site-section" id="studio-section">
+            <div class="container">
+
+                <div class="row mb-5 ">
+                    <div class="col-md-7 section-title text-center mx-auto">
+                        <span class="sub-title mb-2 d-block">Photos</span>
+                        <h2 class="title text-primary mb-3">Studio Gallery</h2>
+                    </div>
+                </div>
+
+                <div id="posts" class="row no-gutter">
+                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_1.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_1.jpg'); ?>">
+                        </a>
+                    </div>
+                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_2.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_2.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_3.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_3.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_4.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_4.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_5.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_5.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_6.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_6.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_7.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_7.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_9.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_9.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_10.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_10.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_11.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_11.jpg'); ?>">
+                        </a>
+                    </div>
+
+                    <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="<?= base_url('theme/images/sq_img_12.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_12.jpg'); ?>">
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div> <!-- END .site-section -->
+
+        <div class="site-section" id="contact-section">
+            <div class="container">
+                <form action="" class="contact-form">
+
+                    <div class="section-title text-center mb-5">
+                        <span class="sub-title mb-2 d-block">Get In Touch</span>
+                        <h2 class="title text-primary">Contact Us</h2>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-md">Send Message</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div> <!-- END .site-section -->
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3 class="footer-heading mb-4">About Us</h3>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-lg-3 ml-auto">
+
+                        <div class="row mb-5">
+                            <div class="col-md-12">
+                                <h3 class="footer-heading mb-4">Navigation</h3>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#home-section" class="smoothscroll">Home</a></li>
+                                    <li><a href="#what-we-do-section" class="smoothscroll">What We Do</a></li>
+                                    <li><a href="#about-section" class="smoothscroll">About Us</a></li>
+                                    <li><a href="#team-section" class="smoothscroll">Team</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+
+                        <div class="mb-5">
+                            <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+                            <form method="post" class="form-subscribe">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control border-white text-white bg-transparent" placeholder="Enter full name" aria-label="Enter Email" aria-describedby="button-addon2">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control border-white text-white bg-transparent" placeholder="Enter email" aria-label="Enter Email" aria-describedby="button-addon2">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary px-5" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <div class="mb-4">
+                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                        </div>
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> Fanjoyo Group | Dev with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://jowokode.com" target="_blank">JowoKode</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </div>
-    <!-- Search model end -->
 
-    <!-- JS here -->
+    <script src="<?= base_url('theme/js/jquery-3.3.1.min.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/popper.min.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/owl.carousel.min.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/aos.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/jquery.sticky.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/stickyfill.min.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/jquery.easing.1.3.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/isotope.pkgd.min.js'); ?>"></script>
 
-    <script src="<?= base_url('./assets/js/vendor/modernizr-3.5.0.min.js'); ?>"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="<?= base_url('./assets/js/vendor/jquery-1.12.4.min.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/popper.min.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/bootstrap.min.js'); ?>"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="<?= base_url('./assets/js/jquery.slicknav.min.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/jquery.fancybox.min.js'); ?>"></script>
+    <script src="<?= base_url('theme/js/main.js'); ?>"></script>
 
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="<?= base_url('./assets/js/owl.carousel.min.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/slick.min.js'); ?>"></script>
-    <!-- Date Picker -->
-    <script src="<?= base_url('./assets/js/gijgo.min.js'); ?>"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="<?= base_url('./assets/js/wow.min.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/animated.headline.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/jquery.magnific-popup.js'); ?>"></script>
-
-    <!-- Scrollup, nice-select, sticky -->
-    <script src="<?= base_url('./assets/js/jquery.scrollUp.min.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/jquery.nice-select.min.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/jquery.sticky.js'); ?>"></script>
-
-    <!-- contact js -->
-    <script src="<?= base_url('./assets/js/contact.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/jquery.form.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/jquery.validate.min.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/mail-script.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/jquery.ajaxchimp.min.js'); ?>"></script>
-
-    <!-- Jquery Plugins, main Jquery -->
-    <script src="<?= base_url('./assets/js/plugins.js'); ?>"></script>
-    <script src="<?= base_url('./assets/js/main.js'); ?>"></script>
 
 </body>
 
