@@ -189,7 +189,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <li>SEO</li>
                             </ul>
                         </div>
-                        <p><a data-fancybox data-ratio="2" href="https://vimeo.com/326176805" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
+                        <p><a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=gIB2egm7tL8" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
                     </div>
                 </div>
             </div>
