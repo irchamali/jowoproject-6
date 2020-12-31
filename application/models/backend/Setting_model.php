@@ -65,8 +65,8 @@ class Setting_model extends CI_Model
 		$this->db->update('tbl_home');
 	}
 
-	// about information
 
+	// About information
 	function get_about_data()
 	{
 		$query = $this->db->get('tbl_about', 1);
@@ -92,5 +92,57 @@ class Setting_model extends CI_Model
 		$this->db->set('about_link', $link);
 		$this->db->where('about_id', $about_id);
 		$this->db->update('tbl_about');
+	}
+
+
+	// Service information
+	function get_service_data()
+	{
+		$query = $this->db->get('tbl_service', 1);
+		return $query;
+	}
+
+	function update_information_service($service_id, $title, $subtitle, $service1, $description1, $service2, $description2, $service3, $description3, $service4, $description4, $service5, $description5, $service6, $description6)
+	{
+		$this->db->set('service_title', $title);
+		$this->db->set('service_subtitle', $subtitle);
+		$this->db->set('service_service1', $service1);
+		$this->db->set('service_description1', $description1);
+		$this->db->set('service_service2', $service2);
+		$this->db->set('service_description2', $description2);
+		$this->db->set('service_service3', $service3);
+		$this->db->set('service_description3', $description3);
+		$this->db->set('service_service4', $service4);
+		$this->db->set('service_description4', $description4);
+		$this->db->set('service_service5', $service5);
+		$this->db->set('service_description5', $description5);
+		$this->db->set('service_service6', $service6);
+		$this->db->set('service_description6', $description6);
+
+		$this->db->where('service_id', $service_id);
+		$this->db->update('tbl_service');
+	}
+
+
+	// Reason information
+	function get_reason_data()
+	{
+		$query = $this->db->get('tbl_reason', 1);
+		return $query;
+	}
+
+	function update_information_reason($reason_id, $title, $subtitle, $why1, $how1, $why2, $how2, $why3, $how3)
+	{
+		$this->db->set('reason_title', $title);
+		$this->db->set('reason_subtitle', $subtitle);
+		$this->db->set('reason_why1', $why1);
+		$this->db->set('reason_how1', $how1);
+		$this->db->set('reason_why2', $why2);
+		$this->db->set('reason_how2', $how2);
+		$this->db->set('reason_why3', $why3);
+		$this->db->set('reason_how3', $how3);
+
+		$this->db->where('reason_id', $reason_id);
+		$this->db->update('tbl_reason');
 	}
 }
