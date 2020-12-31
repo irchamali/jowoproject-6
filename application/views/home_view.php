@@ -95,13 +95,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="img-wrap">
                 <div class="owl-carousel slide-one-item hero-slider">
                     <div class="slide">
-                        <img src="<?= base_url('theme/images/glint_hero_1.jpg'); ?>" alt="Image">
+                        <img src="<?= base_url('theme/images/F1.jpg'); ?>" alt="Image">
                     </div>
                     <div class="slide">
-                        <img src="<?= base_url('theme/images/glint_hero_2.jpg'); ?>" alt="Image">
+                        <img src="<?= base_url('theme/images/F2.jpg'); ?>" alt="Image">
                     </div>
                     <div class="slide">
-                        <img src="<?= base_url('theme/images/glint_hero_3.jpg'); ?>" alt="Image">
+                        <img src="<?= base_url('theme/images/F3.jpg'); ?>" alt="Image">
                     </div>
                 </div>
             </div>

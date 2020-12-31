@@ -11,7 +11,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
     <meta name="robots" content="noindex, nofollow">
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/fav.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favaa.png' ?>">
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
     <link href="<?php echo base_url() . 'assets/plugins/uniform/css/uniform.default.min.css' ?>" rel="stylesheet" />
@@ -42,7 +42,7 @@
                     <div class="col-md-3 center">
                         <div class="login-box">
                             <br>
-                            <a href="https://dekorasidinding.com" class="logo-name text-lg text-center"><img src="<?= base_url('assets/images/favpon.png'); ?>"></a>
+                            <a href="https://fanjoyogroup.com" class="logo-name text-md text-center"><img src="<?= base_url('theme/images/logo.png'); ?>" width="150px"></a>
                             <p class="text-center m-t-md">Please login into your account.</p>
                             <?php echo $this->session->flashdata('msg'); ?>
                             <form class="m-t-md" action="<?php echo site_url('backend/login/auth'); ?>" method="post">
