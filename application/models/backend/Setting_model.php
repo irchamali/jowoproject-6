@@ -145,4 +145,108 @@ class Setting_model extends CI_Model
 		$this->db->where('reason_id', $reason_id);
 		$this->db->update('tbl_reason');
 	}
+
+
+	//Portfolio information
+	function get_portfolio_data()
+	{
+		$query = $this->db->get('tbl_portfolio', 1);
+		return $query;
+	}
+
+	function update_portfolio($portfolio_id, $title, $subtitle, $project1, $image1, $desc1, $link1, $project2, $image2, $desc2, $link2, $project3, $image3, $desc3, $link3)
+	{
+		$this->db->set('portfolio_title', $title);
+		$this->db->set('portfolio_subtitle', $subtitle);
+		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_image1', $image1);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_link1', $link1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_image2', $image2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_link2', $link2);
+		$this->db->set('portfolio_project3', $project3);
+		$this->db->set('portfolio_image3', $image3);
+		$this->db->set('portfolio_desc3', $desc3);
+		$this->db->set('portfolio_link3', $link3);
+
+		$this->db->where('portfolio_id', $portfolio_id);
+		$this->db->update('tbl_portfolio');
+	}
+
+	function update_portfolio_1($portfolio_id, $title, $subtitle, $project1, $image1, $desc1, $link1, $project2, $desc2, $link2, $project3, $desc3, $link3)
+	{
+		$this->db->set('portfolio_title', $title);
+		$this->db->set('portfolio_subtitle', $subtitle);
+		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_image1', $image1);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_link1', $link1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_link2', $link2);
+		$this->db->set('portfolio_project3', $project3);
+		$this->db->set('portfolio_desc3', $desc3);
+		$this->db->set('portfolio_link3', $link3);
+
+		$this->db->where('portfolio_id', $portfolio_id);
+		$this->db->update('tbl_portfolio');
+	}
+
+	function update_portfolio_2($portfolio_id, $title, $subtitle, $project1, $desc1, $link1, $project2, $image2, $desc2, $link2, $project3, $desc3, $link3)
+	{
+		$this->db->set('portfolio_title', $title);
+		$this->db->set('portfolio_subtitle', $subtitle);
+		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_image2', $image2);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_link1', $link1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_link2', $link2);
+		$this->db->set('portfolio_project3', $project3);
+		$this->db->set('portfolio_desc3', $desc3);
+		$this->db->set('portfolio_link3', $link3);
+
+		$this->db->where('portfolio_id', $portfolio_id);
+		$this->db->update('tbl_portfolio');
+	}
+
+	function update_portfolio_3($portfolio_id, $title, $subtitle, $project1, $desc1, $link1, $project2, $desc2, $link2, $project3, $image3, $desc3, $link3)
+	{
+		$this->db->set('portfolio_title', $title);
+		$this->db->set('portfolio_subtitle', $subtitle);
+		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_image3', $image3);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_link1', $link1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_link2', $link2);
+		$this->db->set('portfolio_project3', $project3);
+		$this->db->set('portfolio_desc3', $desc3);
+		$this->db->set('portfolio_link3', $link3);
+
+		$this->db->where('portfolio_id', $portfolio_id);
+		$this->db->update('tbl_portfolio');
+	}
+
+	function update_portfolio_noimg($portfolio_id, $title, $subtitle, $project1, $desc1, $link1, $project2, $desc2, $link2, $project3, $desc3, $link3)
+	{
+		$this->db->set('portfolio_title', $title);
+		$this->db->set('portfolio_subtitle', $subtitle);
+		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_link1', $link1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_link2', $link2);
+		$this->db->set('portfolio_project3', $project3);
+		$this->db->set('portfolio_desc3', $desc3);
+		$this->db->set('portfolio_link3', $link3);
+
+		$this->db->where('portfolio_id', $portfolio_id);
+		$this->db->update('tbl_portfolio');
+	}
 }

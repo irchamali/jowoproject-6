@@ -433,81 +433,80 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                 <div id="posts" class="row no-gutter">
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_1.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G1.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_1.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G1.jpg'); ?>">
                         </a>
                     </div>
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_2.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G2.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_2.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G2.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_3.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G3.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_3.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G3.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_4.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G4.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_4.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G4.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_5.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G5.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_5.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G5.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_6.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G6.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_6.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G6.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_7.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G7.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_7.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G7.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_9.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G8.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_9.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G8.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_10.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G9.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_10.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G9.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_11.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G10.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_11.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G10.jpg'); ?>">
                         </a>
                     </div>
 
                     <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="<?= base_url('theme/images/sq_img_12.jpg'); ?>" class="item-wrap" data-fancybox="gal">
+                        <a href="<?= base_url('theme/images/G11.jpg'); ?>" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="<?= base_url('theme/images/sq_img_12.jpg'); ?>">
+                            <img class="img-fluid" src="<?= base_url('theme/images/G11.jpg'); ?>">
                         </a>
                     </div>
-
 
                 </div>
             </div>
