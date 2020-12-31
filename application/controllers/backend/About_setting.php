@@ -19,88 +19,38 @@ class About_setting extends CI_Controller
 	{
 		$data = $this->setting_model->get_about_data()->row();
 		$x['about_id'] = $data->about_id;
-		$x['about_img'] = $data->about_image;
-		$x['about_img2'] = $data->about_image2;
-		$x['about_desc'] = $data->about_description;
-		$x['about_desc2'] = $data->about_description2;
-		$x['about_desc3'] = $data->about_description3;
+		$x['about_title'] = $data->about_title;
+		$x['about_subtitle'] = $data->about_subtitle;
+		$x['about_image'] = $data->about_image;
+		$x['about_description'] = $data->about_description;
+		$x['about_link'] = $data->about_link;
+
 		$this->load->view('backend/v_about_setting', $x);
 	}
 
 	function update()
 	{
 		$about_id = htmlspecialchars($this->input->post('about_id', TRUE), ENT_QUOTES);
-		$description = $this->input->post('description', TRUE);
-		$description2 = $this->input->post('description2', TRUE);
-		$description3 = $this->input->post('description3', TRUE);
+		$about_title = $this->input->post('about_title', TRUE);
+		$about_subtitle = $this->input->post('about_subtitle', TRUE);
+		$about_description = $this->input->post('about_description', TRUE);
+		$about_link = $this->input->post('about_link', TRUE);
 
 		$config['upload_path'] = './theme/images/';
 		$config['allowed_types'] = 'gif|jpg|png|jpeg|bmp';
 		$config['encrypt_name'] = FALSE;
 
 		$this->upload->initialize($config);
-		if (!empty($_FILES['img_about']['name']) && !empty($_FILES['img_about2']['name'])) {
-			if ($this->upload->do_upload('img_about')) {
-				$img_about = $this->upload->data();
-				$bg_about = $img_about['file_name'];
+		if (!empty($_FILES['about_image']['name'])) {
+			if ($this->upload->do_upload('about_image')) {
+				$about_image = $this->upload->data();
+				$image = $about_image['file_name'];
 			}
-			if ($this->upload->do_upload('img_about2')) {
-				$img_about2 = $this->upload->data();
-				$bg_about2 = $img_about2['file_name'];
-			}
-			$this->setting_model->update_information_about($about_id, $description, $description2, $description3, $bg_about, $bg_about2);
-			$this->session->set_flashdata('msg', 'success');
-			redirect('backend/about_setting');
-		} elseif (!empty($_FILES['img_about']['name']) && empty($_FILES['img_about2']['name'])) {
-			if ($this->upload->do_upload('img_about')) {
-				$img_about = $this->upload->data();
-				$bg_about = $img_about['file_name'];
-			}
-			$this->setting_model->update_information_about1($about_id, $description, $bg_about);
-			$this->session->set_flashdata('msg', 'success');
-			redirect('backend/about_setting');
-		} elseif (empty($_FILES['img_about']['name']) && !empty($_FILES['img_about2']['name'])) {
-			if ($this->upload->do_upload('img_about2')) {
-				$img_about2 = $this->upload->data();
-				$bg_about2 = $img_about2['file_name'];
-			}
-			$this->setting_model->update_information_about2($about_id, $description, $bg_about2);
-			$this->session->set_flashdata('msg', 'success');
-			redirect('backend/about_setting');
-		} elseif (!empty($_FILES['img_about']['name']) && empty($_FILES['img_about2']['name'])) {
-			if ($this->upload->do_upload('img_about')) {
-				$img_about = $this->upload->data();
-				$bg_about = $img_about['file_name'];
-			}
-			$this->setting_model->update_information_about3($about_id, $description2, $bg_about);
-			$this->session->set_flashdata('msg', 'success');
-			redirect('backend/about_setting');
-		} elseif (empty($_FILES['img_about']['name']) && !empty($_FILES['img_about2']['name'])) {
-			if ($this->upload->do_upload('img_about2')) {
-				$img_about2 = $this->upload->data();
-				$bg_about2 = $img_about2['file_name'];
-			}
-			$this->setting_model->update_information_about4($about_id, $description2, $bg_about2);
-			$this->session->set_flashdata('msg', 'success');
-			redirect('backend/about_setting');
-		} elseif (!empty($_FILES['img_about']['name']) && empty($_FILES['img_about2']['name'])) {
-			if ($this->upload->do_upload('img_about')) {
-				$img_about = $this->upload->data();
-				$bg_about = $img_about['file_name'];
-			}
-			$this->setting_model->update_information_about5($about_id, $description3, $bg_about);
-			$this->session->set_flashdata('msg', 'success');
-			redirect('backend/about_setting');
-		} elseif (empty($_FILES['img_about']['name']) && !empty($_FILES['img_about2']['name'])) {
-			if ($this->upload->do_upload('img_about2')) {
-				$img_about2 = $this->upload->data();
-				$bg_about2 = $img_about2['file_name'];
-			}
-			$this->setting_model->update_information_about6($about_id, $description3, $bg_about2);
+			$this->setting_model->update_information_about($about_id, $about_title, $about_subtitle, $image, $about_description, $about_link);
 			$this->session->set_flashdata('msg', 'success');
 			redirect('backend/about_setting');
 		} else {
-			$this->setting_model->update_information_about_noimg($about_id, $description, $description2, $description3);
+			$this->setting_model->update_information_about_noimg($about_id, $about_title, $about_subtitle, $about_description, $about_link,);
 			$this->session->set_flashdata('msg', 'success');
 			redirect('backend/about_setting');
 		}

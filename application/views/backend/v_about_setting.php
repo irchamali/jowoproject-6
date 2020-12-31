@@ -277,38 +277,35 @@
 
                                 <div class="panel-body">
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Gambar 1</label>
+                                        <label for="input1" class="col-sm-2 control-label">Title</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="img_about" class="form-control" id="input1">
-                                            <p class="help-block">Image Produk harus beresolusi 450 x 500 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $about_img; ?>" width="300" class="thumbnail">
+                                            <input type="text" name="about_title" class="form-control" id="input1" value="<?= $about_title; ?>" placeholder="Site Title">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Gambar 2</label>
+                                        <label for="input1" class="col-sm-2 control-label">Subtitle</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="img_about2" class="form-control" id="input1">
-                                            <p class="help-block">Image Produk harus beresolusi 450 x 500 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $about_img2; ?>" width="300" class="thumbnail">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 1</label>
-                                        <div class="col-sm-10">
-                                            <textarea name="description" class="form-control" id="summernote" placeholder="Description"><?php echo $about_desc; ?></textarea>
+                                            <input type="text" name="about_subtitle" class="form-control" id="input1" value="<?= $about_subtitle; ?>" placeholder="Site Title">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 2</label>
+                                        <label for="input1" class="col-sm-2 control-label">Gambar</label>
                                         <div class="col-sm-10">
-                                            <textarea name="description2" class="form-control" id="summernote2" placeholder="Description2"><?php echo $about_desc2; ?></textarea>
+                                            <input type="file" name="about_image" class="form-control" id="input1">
+                                            <p class="help-block">Image harus beresolusi 1300 x 866 Pixels.</p>
+                                            <img src="<?= base_url() . 'theme/images/' . $about_image; ?>" width="400" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 3</label>
+                                        <label for="input1" class="col-sm-2 control-label">Deskripsi</label>
                                         <div class="col-sm-10">
-                                            <textarea name="description3" class="form-control" id="summernote3" placeholder="Description3"><?php echo $about_desc3; ?></textarea>
+                                            <textarea name="about_description" class="form-control" id="summernote" placeholder="Description"><?= $about_description; ?></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Link</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="about_link" class="form-control" id="input1" value="<?= $about_link; ?>" placeholder="Site Title">
                                         </div>
                                     </div>
 

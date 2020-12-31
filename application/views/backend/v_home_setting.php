@@ -278,6 +278,12 @@
                                 <div class="panel-body">
 
                                     <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Title</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="title1" class="form-control" id="input1" value="<?php echo $title_1; ?>" placeholder="Site Title">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 1</label>
                                         <div class="col-sm-10">
                                             <input type="text" name="caption1" class="form-control" id="input1" value="<?php echo $caption_1; ?>" placeholder="Site Name">
@@ -297,50 +303,27 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Title 1</label>
+                                        <label for="input1" class="col-sm-2 control-label">Slide 1</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="title1" class="form-control" id="input1" value="<?php echo $title_1; ?>" placeholder="Site Title">
-                                        </div>
-                                    </div>
-                                    <!-- <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Title 1</label>
-                                        <div class="col-sm-10">
-                                            <textarea name="title1" class="form-control" id="summernote" placeholder="Judul atau promo"><?php echo $title_1; ?></textarea>
-                                        </div>
-                                    </div> -->
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Title 2</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" name="title2" class="form-control" id="input1" value="<?php echo $title_2; ?>" placeholder="Site Title">
+                                            <input type="file" name="sld_1" class="form-control" id="input1">
+                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $slide_1; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Title 3</label>
+                                        <label for="input1" class="col-sm-2 control-label">Slide 2</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="title3" class="form-control" id="input1" value="<?php echo $title_3; ?>" placeholder="Site Title">
+                                            <input type="file" name="sld_2" class="form-control" id="input1">
+                                            <p class="help-block">Image Kedua harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $slide_2; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Title 4</label>
+                                        <label for="input1" class="col-sm-2 control-label">Slide 3</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="title4" class="form-control" id="input1" value="<?php echo $title_4; ?>" placeholder="Site Title">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image Heading</label>
-                                        <div class="col-sm-10">
-                                            <input type="file" name="img_heading" class="form-control" id="input1">
-                                            <p class="help-block">Image Heading harus beresolusi 1800 x 1110 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image_heading; ?>" width="560" class="thumbnail">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image Promo</label>
-                                        <div class="col-sm-10">
-                                            <input type="file" name="img_testimonial" class="form-control" id="input1">
-                                            <p class="help-block">Background Testimonial harus beresolusi 300 x 300 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image_testimonial; ?>" width="560" class="thumbnail">
+                                            <input type="file" name="sld_3" class="form-control" id="input1">
+                                            <p class="help-block">Image Ketiga harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $slide_3; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
 

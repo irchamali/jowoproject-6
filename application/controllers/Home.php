@@ -27,24 +27,21 @@ class Home extends CI_Controller
         $data['latest_post'] = $this->home_model->get_latest_post();
         $data['popular_post'] = $this->home_model->get_popular_post();
         $home = $this->db->get('tbl_home', 1)->row();
+        $data['title_1'] = $home->home_title_1;
         $data['caption_1'] = $home->home_caption_1;
         $data['caption_2'] = $home->home_caption_2;
         $data['caption_3'] = $home->home_caption_3;
-        $data['title_1'] = $home->home_title_1;
-        $data['title_2'] = $home->home_title_2;
-        $data['title_3'] = $home->home_title_3;
-        $data['title_4'] = $home->home_title_4;
-        $data['bg_header'] = $home->home_bg_heading;
-        $data['bg_testimoni'] = $home->home_bg_testimonial;
+        $data['slide_1'] = $home->home_slide_1;
+        $data['slide_2'] = $home->home_slide_2;
         $data['testimonial'] = $this->db->get('tbl_testimonial');
 
         $site_info = $this->db->get('tbl_site', 1)->row();
         $about = $this->db->get('tbl_about', 1)->row();
-        $data['about_img'] = $about->about_image;
-        $data['about_img2'] = $about->about_image2;
-        $data['about_desc'] = $about->about_description;
-        $data['about_desc2'] = $about->about_description2;
-        $data['about_desc3'] = $about->about_description3;
+        $data['about_title'] = $about->about_title;
+        $data['about_subtitle'] = $about->about_subtitle;
+        $data['about_image'] = $about->about_image;
+        $data['about_description'] = $about->about_description;
+        $data['about_link'] = $about->about_link;
         $data['logo'] =  $site_info->site_logo_header;
         $data['icon'] = $site_info->site_favicon;
 
