@@ -21,6 +21,7 @@ class Home extends CI_Controller
         $data['site_desc'] = $site['site_description'];
         $data['site_twitter'] = $site['site_twitter'];
         $data['site_image'] = $site['site_logo_big'];
+
         $data['post_header'] = $this->home_model->get_post_header();
         $data['post_header_2'] = $this->home_model->get_post_header_2();
         $data['post_header_3'] = $this->home_model->get_post_header_3();
@@ -33,8 +34,7 @@ class Home extends CI_Controller
         $data['caption_3'] = $home->home_caption_3;
         $data['slide_1'] = $home->home_slide_1;
         $data['slide_2'] = $home->home_slide_2;
-        $data['testimonial'] = $this->db->get('tbl_testimonial');
-        $site_info = $this->db->get('tbl_site', 1)->row();
+        $data['slide_3'] = $home->home_slide_3;
 
         $about = $this->db->get('tbl_about', 1)->row();
         $data['about_title'] = $about->about_title;
@@ -85,6 +85,9 @@ class Home extends CI_Controller
         $data['reason_why3'] = $reason->reason_why3;
         $data['reason_how3'] = $reason->reason_how3;
 
+        $data['testimonial'] = $this->db->get('tbl_testimonial');
+
+        $site_info = $this->db->get('tbl_site', 1)->row();
         $data['logo'] =  $site_info->site_logo_header;
         $data['icon'] = $site_info->site_favicon;
 

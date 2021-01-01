@@ -95,13 +95,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="img-wrap">
                 <div class="owl-carousel slide-one-item hero-slider">
                     <div class="slide">
-                        <img src="<?= base_url('theme/images/F1.jpg'); ?>" alt="Image">
+                        <img src="<?= base_url('theme/images/') . $slide_1; ?>" alt="Image">
                     </div>
                     <div class="slide">
-                        <img src="<?= base_url('theme/images/F2.jpg'); ?>" alt="Image">
+                        <img src="<?= base_url('theme/images/') . $slide_2; ?>" alt="Image">
                     </div>
                     <div class="slide">
-                        <img src="<?= base_url('theme/images/F3.jpg'); ?>" alt="Image">
+                        <img src="<?= base_url('theme/images/') . $slide_3; ?>" alt="Image">
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             </div>
                             <div class="text">
                                 <p class="sub-text mb-5"><?= $caption_2; ?></p>
-                                <p><a href="#" target="_blank" class="btn btn-outline-primary btn-md"><?= $caption_3; ?></a></p>
+                                <p><a href="#" target="_blank" class="btn btn-outline-warning btn-md"><?= $caption_3; ?></a></p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="row mb-5">
                     <div class="col-lg-6 section-title">
                         <span class="sub-title mb-2 d-block"><?= $service_subtitle; ?></span>
-                        <h2 class="title text-primary"><?= $service_title; ?></h2>
+                        <h2 class="title text-warning"><?= $service_title; ?></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -190,7 +190,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                     <div class="col-lg-5 ml-auto section-title">
                         <span class="sub-title mb-2 d-block"><?= $about_subtitle; ?></span>
-                        <h2 class="title text-primary mb-3"><?= $about_title; ?></h2>
+                        <h2 class="title text-warning mb-3"><?= $about_title; ?></h2>
                         <p class="mb-4"><?= $about_description; ?></p>
 
                         <div class="d-flex">
@@ -205,7 +205,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <li><?= $service_service6; ?></li>
                             </ul>
                         </div>
-                        <p><a data-fancybox data-ratio="2" href="https://www.youtube.com/" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
+                        <p><a data-fancybox data-ratio="2" href="https://www.youtube.com/" class="d-flex align-items-center warning"><span class="icon-play_circle_outline h4 m-0 mr-2 warning"></span> <span>Watch the video</span></a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="row mb-5 ">
                     <div class="col-md-7 section-title text-center mx-auto">
                         <span class="sub-title mb-2 d-block"><?= $portfolio_subtitle; ?></span>
-                        <h2 class="title text-primary mb-3"><?= $portfolio_title; ?></h2>
+                        <h2 class="title text-warning mb-3"><?= $portfolio_title; ?></h2>
                     </div>
                 </div>
                 <div class="row mb-5">
@@ -287,15 +287,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <p class="mb-4"><a href="<?= $portfolio_link1; ?>" class="readmore">Visit website</a></p>
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
-                                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                <p>&ldquo;Komitmen kami <strong>untuk terus membangun inovasi</strong> pada setiap rumah penuh inspirasi.&rdquo;</p>
                             </blockquote>
                             <div class="d-flex align-items-center vcard">
                                 <figure class="mb-0 mr-3">
-                                    <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                    <img src="<?= base_url('theme/images/ic-fan.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
                                 </figure>
                                 <div class="vcard-text">
-                                    <span class="d-block">Jacob Spencer</span>
-                                    <span class="position">Web Designer</span>
+                                    <span class="d-block">Muhammad Fanjoyo</span>
+                                    <span class="position">Owner</span>
                                 </div>
                             </div>
                         </div>
@@ -312,15 +312,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <p class="mb-4"><a href="<?= $portfolio_link2; ?>" class="readmore">Visit website</a></p>
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
-                                <p>&ldquo;A small river named Duden <strong>flows by their place and supplies it with the necessary regelialia</strong>. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                                <p>&ldquo;Komitmen kami <strong>untuk terus membangun inovasi</strong> pada setiap rumah penuh inspirasi.&rdquo;</p>
                             </blockquote>
                             <div class="d-flex align-items-center vcard">
                                 <figure class="mb-0 mr-3">
-                                    <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                    <img src="<?= base_url('theme/images/ic-fan.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
                                 </figure>
                                 <div class="vcard-text">
-                                    <span class="d-block">Jean Smith</span>
-                                    <span class="position">Web Designer</span>
+                                    <span class="d-block">Muhammad Fanjoyo</span>
+                                    <span class="position">Owner</span>
                                 </div>
                             </div>
                         </div>
@@ -337,15 +337,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <p class="mb-4"><a href="<?= $portfolio_link3; ?>" class="readmore">Visit website</a></p>
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
-                                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                <p>&ldquo;Komitmen kami <strong>untuk terus membangun inovasi</strong> pada setiap rumah penuh inspirasi.&rdquo;</p>
                             </blockquote>
                             <div class="d-flex align-items-center vcard">
                                 <figure class="mb-0 mr-3">
-                                    <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                    <img src="<?= base_url('theme/images/ic-fan.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
                                 </figure>
                                 <div class="vcard-text">
-                                    <span class="d-block">Jacob Spencer</span>
-                                    <span class="position">Web Designer</span>
+                                    <span class="d-block">Muhammad Fanjoyo</span>
+                                    <span class="position">Owner</span>
                                 </div>
                             </div>
                         </div>
@@ -360,7 +360,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="row mb-5 ">
                     <div class="col-md-7 section-title text-center mx-auto">
                         <span class="sub-title mb-2 d-block"><?= $reason_subtitle; ?></span>
-                        <h2 class="title text-primary mb-3"><?= $reason_title; ?></h2>
+                        <h2 class="title text-warning mb-3"><?= $reason_title; ?></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -425,7 +425,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="row mb-5 ">
                     <div class="col-md-7 section-title text-center mx-auto">
                         <span class="sub-title mb-2 d-block">Photos</span>
-                        <h2 class="title text-primary mb-3">Galeri</h2>
+                        <h2 class="title text-warning mb-3">Galeri</h2>
                     </div>
                 </div>
 
@@ -516,7 +516,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <form method="post" action="<?php echo site_url('contact/send'); ?>" class="contact-form">
                     <div class="section-title text-center mb-5">
                         <span class="sub-title mb-2 d-block">Get In Touch</span>
-                        <h2 class="title text-primary">Hubungi Kami</h2>
+                        <h2 class="title text-warning">Hubungi Kami</h2>
                     </div>
 
                     <div class="row mb-4">
@@ -543,7 +543,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-md">Send Message</button>
+                            <button type="submit" class="btn btn-warning btn-md">Send Message</button>
                         </div>
                     </div>
 
