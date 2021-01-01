@@ -110,11 +110,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="col-md-6 ml-auto align-self-center">
                         <div class="intro">
                             <div class="heading">
-                                <h1>Fanjoyo Group</h1>
+                                <h1><?= $caption_1; ?></h1>
                             </div>
                             <div class="text">
-                                <p class="sub-text mb-5">Solusi Ramah, Rumah Anda!</p>
-                                <p><a href="#" target="_blank" class="btn btn-outline-primary btn-md">Mulai bikin proyek</a></p>
+                                <p class="sub-text mb-5"><?= $caption_2; ?></p>
+                                <p><a href="#" target="_blank" class="btn btn-outline-primary btn-md"><?= $caption_3; ?></a></p>
                             </div>
                         </div>
                     </div>
@@ -126,8 +126,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-6 section-title">
-                        <span class="sub-title mb-2 d-block">What We Do</span>
-                        <h2 class="title text-primary">Layanan yang kami berikan</h2>
+                        <span class="sub-title mb-2 d-block"><?= $service_subtitle; ?></span>
+                        <h2 class="title text-primary"><?= $service_title; ?></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -135,44 +135,44 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <div class="row">
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                                 <div class="service h-100">
-                                    <h3>Bangun baru/renovasi</h3>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <h3><?= $service_service1; ?></h3>
+                                    <p><?= $service_description1; ?></p>
                                     <p><a href="#" class="readmore">Learn more</a></p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                                 <div class="service h-100">
-                                    <h3>Partisi/plafon</h3>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <h3><?= $service_service2; ?></h3>
+                                    <p><?= $service_description2; ?></p>
                                     <p><a href="#" class="readmore">Learn more</a></p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                                 <div class="service h-100">
-                                    <h3>Kontruksi baja/pagar/kanopi</h3>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <h3><?= $service_service3; ?></h3>
+                                    <p><?= $service_description3; ?></p>
                                     <p><a href="#" class="readmore">Learn more</a></p>
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                                 <div class="service h-100">
-                                    <h3>Kusen aluminium</h3>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <h3><?= $service_service4; ?></h3>
+                                    <p><?= $service_description4; ?></p>
                                     <p><a href="#" class="readmore">Learn more</a></p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                                 <div class="service h-100">
-                                    <h3>Atap galvalum</h3>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <h3><?= $service_service5; ?></h3>
+                                    <p><?= $service_description5; ?></p>
                                     <p><a href="#" class="readmore">Learn more</a></p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                                 <div class="service h-100">
-                                    <h3>Interior</h3>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    <h3><?= $service_service6; ?></h3>
+                                    <p><?= $service_description6; ?></p>
                                     <p><a href="#" class="readmore">Learn more</a></p>
                                 </div>
                             </div>
@@ -186,27 +186,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5">
-                        <img src="<?= base_url('theme/images/glint_about_1.jpg'); ?>" alt="Image" class="img-fluid">
+                        <img src="<?= base_url('theme/images/') . $about_image; ?>" alt="Image" class="img-fluid">
                     </div>
                     <div class="col-lg-5 ml-auto section-title">
-                        <span class="sub-title mb-2 d-block">About Us</span>
-                        <h2 class="title text-primary mb-3">Tentang Kami</h2>
-                        <p class="mb-4">Kami bergerak dalam bidang konstruksi, renovasi rumah tinggal, kantor, ruko maupun gudang. Kami sudah berpengalaman dalam renovasi dengan harga yang kompetitif. Komitmen kami adalah menjaga kepercayaan dalam hal renovasi atau mewujudkan bangunan baru yang sesuai dengan keinginan dan kebutuhan klien.</p>
+                        <span class="sub-title mb-2 d-block"><?= $about_subtitle; ?></span>
+                        <h2 class="title text-primary mb-3"><?= $about_title; ?></h2>
+                        <p class="mb-4"><?= $about_description; ?></p>
 
                         <div class="d-flex">
                             <ul class="list-unstyled ul-check success mr-5">
-                                <li>Desain</li>
-                                <li>Partisi / plafon</li>
-                                <li>Pengecatan</li>
-                                <li>Galvalum atap</li>
+                                <li><?= $service_service1; ?></li>
+                                <li><?= $service_service2; ?></li>
+                                <li><?= $service_service3; ?></li>
                             </ul>
                             <ul class="list-unstyled ul-check success">
-                                <li>Bangun baru / renovasi</li>
-                                <li>Konstruksi baja / pagar / kanopi</li>
-                                <li>Kusen Alumunium</li>
+                                <li><?= $service_service4; ?></li>
+                                <li><?= $service_service5; ?></li>
+                                <li><?= $service_service6; ?></li>
                             </ul>
                         </div>
-                        <p><a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=gIB2egm7tL8" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
+                        <p><a data-fancybox data-ratio="2" href="https://www.youtube.com/" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
                     </div>
                 </div>
             </div>
@@ -274,18 +273,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="container">
                 <div class="row mb-5 ">
                     <div class="col-md-7 section-title text-center mx-auto">
-                        <span class="sub-title mb-2 d-block">Recent Works</span>
-                        <h2 class="title text-primary mb-3">Beberapa inovasi rumah yang telah kami kerjakan</h2>
+                        <span class="sub-title mb-2 d-block"><?= $portfolio_subtitle; ?></span>
+                        <h2 class="title text-primary mb-3"><?= $portfolio_title; ?></h2>
                     </div>
                 </div>
                 <div class="row mb-5">
                     <div class="col-lg-6 mb-4 mb-lg-0">
-                        <img src="<?= base_url('theme/images/sq_img_2.jpg'); ?>" alt="Image" class="img-fluid">
+                        <img src="<?= base_url('theme/images/') . $portfolio_image1; ?>" alt="Image" class="img-fluid">
                     </div>
                     <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
-                        <h3>Project title one</h3>
-                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <p class="mb-4"><a href="#" class="readmore">Visit website</a></p>
+                        <h3><?= $portfolio_project1; ?></h3>
+                        <p class="mb-4"><?= $portfolio_desc1; ?></p>
+                        <p class="mb-4"><a href="<?= $portfolio_link1; ?>" class="readmore">Visit website</a></p>
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
                                 <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
@@ -305,12 +304,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                 <div class="row mb-5">
                     <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                        <img src="<?= base_url('theme/images/sq_img_4.jpg'); ?>" alt="Image" class="img-fluid">
+                        <img src="<?= base_url('theme/images/') . $portfolio_image2; ?>" alt="Image" class="img-fluid">
                     </div>
                     <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
-                        <h3>Project title two</h3>
-                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <p class="mb-4"><a href="#" class="readmore">Visit website</a></p>
+                        <h3><?= $portfolio_project2; ?></h3>
+                        <p class="mb-4"><?= $portfolio_desc2; ?></p>
+                        <p class="mb-4"><a href="<?= $portfolio_link2; ?>" class="readmore">Visit website</a></p>
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
                                 <p>&ldquo;A small river named Duden <strong>flows by their place and supplies it with the necessary regelialia</strong>. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
@@ -330,12 +329,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                 <div class="row mb-5">
                     <div class="col-lg-6 mb-4 mb-lg-0">
-                        <img src="<?= base_url('theme/'); ?>images/sq_img_6.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= base_url('theme/images/') . $portfolio_image3; ?>" alt="Image" class="img-fluid">
                     </div>
                     <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
-                        <h3>Project title three</h3>
-                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <p class="mb-4><a href=" #" class="readmore">Visit website</a></p>
+                        <h3><?= $portfolio_project3; ?></h3>
+                        <p class="mb-4"><?= $portfolio_desc3; ?></p>
+                        <p class="mb-4"><a href="<?= $portfolio_link3; ?>" class="readmore">Visit website</a></p>
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
                                 <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
@@ -360,22 +359,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="container">
                 <div class="row mb-5 ">
                     <div class="col-md-7 section-title text-center mx-auto">
-                        <span class="sub-title mb-2 d-block">Problem Solving</span>
-                        <h2 class="title text-primary mb-3">Mengapa memilih kami?</h2>
+                        <span class="sub-title mb-2 d-block"><?= $reason_subtitle; ?></span>
+                        <h2 class="title text-primary mb-3"><?= $reason_title; ?></h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 mb-4">
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
-                                <p>&ldquo;Banyak klient yang sudah <strong>mempercayai </strong> kinerja kami.&rdquo;</p>
+                                <p>&ldquo; <strong><?= $reason_how1; ?></strong>&rdquo;</p>
                             </blockquote>
                             <div class="d-flex align-items-center vcard">
                                 <figure class="mb-0 mr-3">
-                                    <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                    <img src="<?= base_url('theme/images/ic-fan.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
                                 </figure>
                                 <div class="vcard-text">
-                                    <span class="d-block">TERPERCAYA</span>
+                                    <span class="d-block"><?= $reason_why1; ?></span>
                                     <span class="position">Trusted</span>
                                 </div>
                             </div>
@@ -384,14 +383,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="col-lg-4 mb-4">
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
-                                <p>&ldquo;Penyelesaian pekerjaan dengan <strong>waktu maksimal</strong>.&rdquo;</p>
+                                <p>&ldquo; <strong><?= $reason_how2; ?></strong>&rdquo;</p>
                             </blockquote>
                             <div class="d-flex align-items-center vcard">
                                 <figure class="mb-0 mr-3">
-                                    <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                    <img src="<?= base_url('theme/images/ic-fan.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
                                 </figure>
                                 <div class="vcard-text">
-                                    <span class="d-block">CEPAT</span>
+                                    <span class="d-block"><?= $reason_why2; ?></span>
                                     <span class="position">Express</span>
                                 </div>
                             </div>
@@ -401,14 +400,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="col-lg-4 mb-4">
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
-                                <p>&ldquo;Dikerjakan oleh pekerja <strong>terampil dan berpengalaman</strong> pada bidangnya.&rdquo;</p>
+                                <p>&ldquo; <strong><?= $reason_how3; ?></strong>&rdquo;</p>
                             </blockquote>
                             <div class="d-flex align-items-center vcard">
                                 <figure class="mb-0 mr-3">
-                                    <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
+                                    <img src="<?= base_url('theme/images/ic-fan.jpg'); ?>" alt="Image" class="img-fluid ounded-circle">
                                 </figure>
                                 <div class="vcard-text">
-                                    <span class="d-block">BERPENGALAMAN</span>
+                                    <span class="d-block"><?= $reason_why3; ?></span>
                                     <span class="position">Experienced</span>
                                 </div>
                             </div>
@@ -423,7 +422,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <div class="site-section" id="studio-section">
             <div class="container">
-
                 <div class="row mb-5 ">
                     <div class="col-md-7 section-title text-center mx-auto">
                         <span class="sub-title mb-2 d-block">Photos</span>
@@ -514,8 +512,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <div class="site-section" id="contact-section">
             <div class="container">
-                <form action="" class="contact-form">
-
+                <?php echo $this->session->flashdata('msg'); ?>
+                <form method="post" action="<?php echo site_url('contact/send'); ?>" class="contact-form">
                     <div class="section-title text-center mb-5">
                         <span class="sub-title mb-2 d-block">Get In Touch</span>
                         <h2 class="title text-primary">Hubungi Kami</h2>
@@ -523,25 +521,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                     <div class="row mb-4">
                         <div class="col-md-6 mb-4 mb-md-0">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <!-- <input type="text" name="name" class="form-control" placeholder="Name" required=""> -->
+                            <input type="text" name="name" class="form-control" placeholder="Nama kamu *" maxlength="50" required="">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <!-- <input type="email" name="email" class="form-control" placeholder="Email" required=""> -->
+                            <input type="email" name="email" class="form-control" placeholder="Email kamu*" maxlength="50" required="">
                         </div>
                     </div>
-
                     <div class="row mb-4">
                         <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <!-- <input type="text" name="subject" class="form-control" placeholder="Subject" required=""> -->
+                            <input type="text" name="subject" class="form-control" placeholder="Subject pesan *" maxlength="100" required="">
                         </div>
                     </div>
-
                     <div class="row mb-4">
                         <div class="col-12">
-                            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <!-- <textarea class="form-control" name="message" id="" cols="30" rows="10" placeholder="Message" required=""></textarea> -->
+                            <textarea name="message" class="form-control" rows="6" placeholder="Tulis pesan.. *" maxlength="400" required></textarea>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary btn-md">Send Message</button>
